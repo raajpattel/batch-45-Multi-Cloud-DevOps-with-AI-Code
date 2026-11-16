@@ -37,3 +37,12 @@ https://www.clouddevopshub.com/blog/dockerfile
 
 https://github.com/komljen/dockerfile-examples if 5+ Tech Experience then open and see this as well..
 ```[cite: 1]
+
+^ CONTAINER TO IMAGE
+docker commit <container id> <new image name>
+
+* Daily Operation activity of docker
+Backup
+docker save <image name> > mybackup.tar
+backup to image
+docker load <Image name> < mybackup.tar
