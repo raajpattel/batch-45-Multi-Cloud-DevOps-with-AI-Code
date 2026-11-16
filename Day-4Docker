@@ -1,0 +1,39 @@
+This is single line command to install docker 
+sudo apt-get update && sudo apt install docker.io -y  -y mean auto apporove
+
+alpine is slim image 
+
+Optimazation
+
+FROM ubuntu
+MAINTAINER alpraj3211@gmail.com
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD ["echo","Image Created"]
+
+docker build -t alprajimage .
+
+
+FROM alpineslim
+RUN apt-get update && apt-get install nginx -y
+ 
+
+
+All keywords can be use in DockerFile
+
+Command | Overview
+FROM | Specify base image
+RUN | Execute specified command
+ENTRYPOINT | Specify the command to execute the container
+CMD | Specify the command at the time of container execution (can be overwritten)
+COPY | Simple copy of files / directories from host machine to container image
+ADD | COPY + unzip / download from URL ( not recommended )
+ENV | Add environment variables
+EXPOSE | Open designated port
+WORKDIR | Change current directory
+MAINTAINER | deprecated - now LABEL maintainer="maintainer@example.com" should be specified as
+
+https://www.clouddevopshub.com/blog/dockerfile
+
+https://github.com/komljen/dockerfile-examples if 5+ Tech Experience then open and see this as well..
+```[cite: 1]
