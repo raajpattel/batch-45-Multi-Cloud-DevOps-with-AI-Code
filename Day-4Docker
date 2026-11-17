@@ -56,4 +56,10 @@ docker exec -it mycontainer sh or docker exec -it mycontainer /bin/bash
 apt update && apt install htop -y
 htop
 
+* CLEANE OR PRUNE UNUSED (DANGLING IMAGES
+docker system df
+docker system prune
+docker image prune -a 
+take aproval from manager
+
 
