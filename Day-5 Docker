@@ -2,7 +2,7 @@ In windows docker and use cmd and run this command
 docker ai 
 
 Kubernative cluster type for create
-1. kind
+1. kind (is good light docker prefered)
 2.k3s
 3.minikube
 4.kubeadm
