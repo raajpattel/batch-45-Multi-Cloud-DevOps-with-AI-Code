@@ -46,3 +46,14 @@ Backup
 docker save <image name> > mybackup.tar
 backup to image
 docker load <Image name> < mybackup.tar
+
+*DOCKER TROUBLESHOTING AND MONITOR COMMAND
+docker inspect <contiainername>
+docker logs <containername>
+docker stats <container id> or <container name>
+docker exec -it mycontainer sh or docker exec -it mycontainer /bin/bash
+# substuite your package manager's commands 
+apt update && apt install htop -y
+htop
+
+
